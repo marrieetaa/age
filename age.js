@@ -1,2 +1,6 @@
-let year =  'Birth year:';
-let age =  Number(2024 - year);
+function personAge (birthYear){
+  const now  =new Date();
+  let year = now .getFullYear();
+  return year - birthYear;
+}
+personAge(1997);
